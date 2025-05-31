@@ -1,0 +1,18 @@
+// dark mode
+$main_dark_color: #19191c;
+$second_main_dark_color: #00000021;
+$text_light_color: #f5f5f5;
+
+$gold: #907d3e;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-color: #19191c;
+}

@@ -1,0 +1,44 @@
+@use "../../../../assets/styles/index.scss";
+
+.king,
+.dropdownNavbar {
+  position: sticky;
+  top: 0px;
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  font-size: 1.1em;
+  color: index.$text_light_color;
+}
+
+.king {
+  display: flex;
+  align-items: center;
+  padding: 25px 35px;
+  justify-content: space-between;
+
+  @media screen and (max-width: 820px) {
+    display: none;
+  }
+}
+
+.dropdownNavbar {
+  display: none;
+
+  @media screen and (max-width: 820px) {
+    display: block;
+  }
+
+  .navbarIconAndDownloadBtnContainer {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 20px;
+    padding: 25px 35px;
+  }
+
+  .barsIconContainer {
+    cursor: pointer;
+  }
+}
