@@ -6,14 +6,14 @@ import styles from './SkillsSidebar.module.scss'
 export default function SkillsSidebar() {
 
     const skills: JSX.Element[] = [
-        <SiHtml5 title='HTML5'/>,
-        <SiCss3 title='CSS3'/>,
-        <SiSass title='sass'/>,
-        <SiBootstrap title='Bootstrap'/>,
-        <SiJavascript title='JavaScript'/>,
-        <SiReact title='React'/>,
-        <SiTypescript title='TypeScript'/>,
-        <SiGit title='Git'/>,
+        <SiHtml5 title='HTML5' />,
+        <SiCss3 title='CSS3' />,
+        <SiSass title='sass' />,
+        <SiBootstrap title='Bootstrap' />,
+        <SiJavascript title='JavaScript' />,
+        <SiReact title='React' />,
+        <SiTypescript title='TypeScript' />,
+        <SiGit title='Git' />,
     ]
 
     return (
