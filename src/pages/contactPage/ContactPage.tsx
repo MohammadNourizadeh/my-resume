@@ -1,7 +1,7 @@
-import { faGithub, faGoogle, faHtml5 } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faGoogle } from '@fortawesome/free-brands-svg-icons'
+import { faMobile } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from './ContactPage.module.scss'
-import { faMobile } from '@fortawesome/free-solid-svg-icons'
 
 export default function ContactPage() {
     return (
