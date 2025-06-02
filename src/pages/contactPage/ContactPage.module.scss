@@ -1,0 +1,63 @@
+@use "../../assets/styles/index.scss";
+
+.king {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 91.6px);
+  color: index.$text_light_color;
+  font-size: 1.2em;
+
+  @media screen and (max-width: 820px) {
+    height: calc(100vh - 151.6px);
+    font-size: 1em;
+  }
+
+  .contactBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    background-color: index.$second_main_dark_color;
+    box-shadow: 0 0 15px 1px rgb(13, 13, 13);
+    padding: 40px;
+    border-radius: 10px;
+
+    @media screen and (max-width: 820px) {
+      padding: 20px;
+    }
+
+    .imgAndNameContainer {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 20px;
+      color: index.$gold;
+
+      img {
+        border-radius: 50%;
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+      }
+
+      span {
+        font-size: 2em;
+      }
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      .iconContainer{
+        font-size: 1.3em;
+      }
+
+      a {
+        color: index.$text_light_color;
+      }
+    }
+  }
+}

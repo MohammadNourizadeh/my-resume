@@ -22,7 +22,7 @@ export default function NavbarLinks() {
             linkName: 'about'
         },
         {
-            href: '/admin/home',
+            href: '/admin/contact',
             linkName: 'contact'
         },
     ]

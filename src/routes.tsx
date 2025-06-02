@@ -1,6 +1,7 @@
 import { JSX } from "react";
 import { Navigate } from "react-router-dom";
 import Admin from "./layOutes/admin/Admin";
+import ContactPage from "./pages/contactPage/ContactPage";
 import HomePage from "./pages/homePage/HomePage";
 
 type ChildrenType = {
@@ -26,7 +27,11 @@ const routes: RoutesType[] = [
             {
                 path: '/admin/home',
                 element: <HomePage />
-            }
+            },
+            {
+                path: '/admin/contact',
+                element: <ContactPage />
+            },
         ]
     },
 ]

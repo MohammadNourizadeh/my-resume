@@ -1,13 +1,12 @@
 @use "../../../../../assets/styles/index.scss";
 
 .king {
+  text-decoration: none;
   color: index.$text_light_color;
-  background-color: index.$main_dark_color;
   padding: 10px 20px;
   font-size: 1em;
   border: 1px solid gold;
   border-radius: 10px;
-  cursor: pointer;
   transition: 0.2s ease-in-out;
 
   &:hover {
