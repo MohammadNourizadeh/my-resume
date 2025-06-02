@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom'
 import styles from './NavbarLinks.module.scss'
 
 type linksType = {
-    href: string,
-    linkName: string
+    href?: string,
+    linkName: string,
+    disable?: boolean
 }
 
 export default function NavbarLinks() {
@@ -18,8 +19,8 @@ export default function NavbarLinks() {
             linkName: 'home'
         },
         {
-            href: '/admin/home',
-            linkName: 'about'
+            linkName: 'chat',
+            disable: true
         },
         {
             href: '/admin/contact',
@@ -30,12 +31,20 @@ export default function NavbarLinks() {
     return (
         <div className={styles.king}>
             {links.map((link, index) => (
-                <Link to={link.href}
-                    onClick={() => { setPage(link.linkName) }}
-                    className={page === link.linkName ? styles.selectedItem : ''}
-                    key={index}>
-                    {link.linkName}
-                </Link>
+
+                !link.disable ?
+                    <Link to={link.href ? link.href : ''}
+                        onClick={() => { setPage(link.linkName) }}
+                        className={page === link.linkName ? styles.selectedItem : ''}
+                        key={index}>
+                        {link.linkName}
+                    </Link>
+
+                    :
+
+                    <div className={styles.disabledLink}>
+                        {link.linkName}
+                    </div>
             ))}
         </div>
     )
