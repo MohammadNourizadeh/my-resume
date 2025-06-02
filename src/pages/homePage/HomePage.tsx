@@ -26,8 +26,8 @@ export default function HomePage() {
                     </span>
                 </div>
                 <div className={styles.coursesAndCertifications}>
-                    <CoursesAndCertifications header={'web design pack'} institute={'tehran institute of technology'} date={'March-April 2022'} />
-                    <CoursesAndCertifications header={'react'} institute={'tehran institute of technology'} date={'March-April 2023'} />
+                    <CoursesAndCertifications header={'web design pack'} institute={'tehran institute of technology'} date={'July 6, 2023'} score='95/100' pdfName='web_design_pack.pdf' />
+                    <CoursesAndCertifications header={'react'} institute={'tehran institute of technology'} date={'February 16, 2024'} score='100/100' pdfName='react.pdf' />
                 </div>
             </div>
 
