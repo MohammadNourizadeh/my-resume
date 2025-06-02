@@ -9,7 +9,7 @@ export default function ContactPage() {
             <div className={styles.contactBox}>
                 <div className={styles.imgAndNameContainer}>
                     <div>
-                        <img src="../../../public/images/contactPageImg.JPG" alt="Mohammad" />
+                        <img src="/images/contactPageImg.JPG" alt="Mohammad" />
                     </div>
                     <span>
                         Mohammad <br />
