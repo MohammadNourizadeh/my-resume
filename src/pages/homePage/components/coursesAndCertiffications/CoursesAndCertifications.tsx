@@ -24,7 +24,7 @@ export default function CoursesAndCertifications({ header, institute, date, scor
                 </div>
             </div>
             <div className={styles.buttonContainer}>
-                <a href={`../../../../../public/pdf/${pdfName}`} download>view certificate</a>
+                <a href={`/pdf/${pdfName}`} download>view certificate</a>
             </div>
         </div>
     )

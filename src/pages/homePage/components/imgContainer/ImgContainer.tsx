@@ -5,7 +5,7 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 export default function ImgContainer() {
     return (
         <div className={styles.imgContainer}>
-            <img src="../../../public/images/myImg.JPG" className={styles.img} alt="mohammad" />
+            <img src="/images/myImg.JPG" className={styles.img} alt="mohammad" />
             <p>
                 more about me
                 <span>
